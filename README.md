@@ -99,6 +99,7 @@ Sistemi doğrudan deneyimleyebilmeniz için önceden tanımlanmış test kullan�
 
 ## Galeri
 
+<img width="1673" height="747" alt="Ekran Resmi 2026-05-31 21 14 41" src="https://github.com/user-attachments/assets/25c48668-9d67-4d7d-83dc-37ae386c673d" />
 <img width="3360" height="3464" alt="screencapture-localhost-3000-ilan-bilinmeyen-rota-agatha-christie-66572266-2026-05-31-21_17_55" src="https://github.com/user-attachments/assets/91a5f79c-e1f1-4b9f-9552-84c0f421a9cf" />
 <img width="3360" height="3134" alt="screencapture-localhost-3000-arama-2026-05-31-21_16_16" src="https://github.com/user-attachments/assets/3d025f80-f943-441e-90fd-2db539c954f6" />
 <img width="254" height="430" alt="Ekran Resmi 2026-05-31 21 24 01" src="https://github.com/user-attachments/assets/574cd571-d85e-43e7-ba23-bb1878c034c0" />
@@ -108,6 +109,5 @@ Sistemi doğrudan deneyimleyebilmeniz için önceden tanımlanmış test kullan�
 <img width="242" height="350" alt="Ekran Resmi 2026-05-31 21 22 19" src="https://github.com/user-attachments/assets/9de73b7d-3a80-4a39-932d-184f5af70ea6" />
 <img width="1670" height="295" alt="Ekran Resmi 2026-05-31 21 17 33" src="https://github.com/user-attachments/assets/06bedba9-31e0-4290-8123-e653591a7e52" />
 <img width="1615" height="733" alt="Ekran Resmi 2026-05-31 21 15 17" src="https://github.com/user-attachments/assets/c7ed484e-61c0-4cba-bab9-c7ce5b88934d" />
-<img width="1673" height="747" alt="Ekran Resmi 2026-05-31 21 14 41" src="https://github.com/user-attachments/assets/25c48668-9d67-4d7d-83dc-37ae386c673d" />
 
   
