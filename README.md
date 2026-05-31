@@ -1,4 +1,4 @@
-# 📚 Okur Pazarı — İkinci El Kitap İlan Platformu
+# Okur Pazarı — İkinci El Kitap İlan Platformu
 
 **Okur Pazarı**, kullanıcıların ikinci el kitaplarını güvenle listeleyip satabileceği, alıcıların ise aradıkları eserleri kolayca bulup mesajlaşma veya soru-cevap yoluyla satıcılarla iletişim kurabileceği **moderasyonlu ve gerçek zamanlı bir e-ticaret ilan platformudur**.
 
@@ -100,14 +100,23 @@ Sistemi doğrudan deneyimleyebilmeniz için önceden tanımlanmış test kullan�
 ## Galeri
 
 <img width="1673" height="747" alt="Ekran Resmi 2026-05-31 21 14 41" src="https://github.com/user-attachments/assets/25c48668-9d67-4d7d-83dc-37ae386c673d" />
+<br>
 <img width="3360" height="3464" alt="screencapture-localhost-3000-ilan-bilinmeyen-rota-agatha-christie-66572266-2026-05-31-21_17_55" src="https://github.com/user-attachments/assets/91a5f79c-e1f1-4b9f-9552-84c0f421a9cf" />
+<br>
 <img width="3360" height="3134" alt="screencapture-localhost-3000-arama-2026-05-31-21_16_16" src="https://github.com/user-attachments/assets/3d025f80-f943-441e-90fd-2db539c954f6" />
+<br>
 <img width="254" height="430" alt="Ekran Resmi 2026-05-31 21 24 01" src="https://github.com/user-attachments/assets/574cd571-d85e-43e7-ba23-bb1878c034c0" />
+<br>
 <img width="1266" height="455" alt="Ekran Resmi 2026-05-31 21 23 53" src="https://github.com/user-attachments/assets/95bff5ca-4731-46bb-bc0d-7eddaa8d4f58" />
+<br>
 <img width="1069" height="203" alt="Ekran Resmi 2026-05-31 21 23 15" src="https://github.com/user-attachments/assets/c25ad6e5-4eb1-43dd-9230-a016f7f9f645" />
+<br>
 <img width="1672" height="576" alt="Ekran Resmi 2026-05-31 21 22 47" src="https://github.com/user-attachments/assets/36a95b7e-0649-4f8f-a226-4091d59f460d" />
+<br>
 <img width="242" height="350" alt="Ekran Resmi 2026-05-31 21 22 19" src="https://github.com/user-attachments/assets/9de73b7d-3a80-4a39-932d-184f5af70ea6" />
+<br>
 <img width="1670" height="295" alt="Ekran Resmi 2026-05-31 21 17 33" src="https://github.com/user-attachments/assets/06bedba9-31e0-4290-8123-e653591a7e52" />
+<br>
 <img width="1615" height="733" alt="Ekran Resmi 2026-05-31 21 15 17" src="https://github.com/user-attachments/assets/c7ed484e-61c0-4cba-bab9-c7ce5b88934d" />
 
   
