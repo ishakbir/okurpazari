@@ -1,103 +1,186 @@
-# Okur Pazarı — İkinci El Kitap İlan Platformu
+<div align="center">
 
-**Okur Pazarı**, kullanıcıların ikinci el kitaplarını güvenle listeleyip satabileceği, alıcıların ise aradıkları eserleri kolayca bulup mesajlaşma veya soru-cevap yoluyla satıcılarla iletişim kurabileceği **moderasyonlu ve gerçek zamanlı bir e-ticaret ilan platformudur**.
+# 📚 OkurPazarı
+### İkinci El Kitap İlan Platformu · Second-Hand Book Marketplace
 
----
+<p>
+  <img src="https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js 16">
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19">
+  <img src="https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Socket.io-Realtime-010101?style=for-the-badge&logo=socket.io&logoColor=white" alt="Socket.io">
+  <img src="https://img.shields.io/badge/MySQL-8.x-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/TypeScript-Typed-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+</p>
 
-## 🚀 Öne Çıkan Özellikler
+<p><strong>🇹🇷 Türkçe</strong> · <a href="#-english">🇬🇧 English</a></p>
 
-### 👥 Kullanıcı ve Rol Yönetimi
-- **Güvenli Auth Sistemi:** JWT tabanlı Access Token ve HttpOnly Cookie tabanlı Refresh Token mekanizması ile güvenli kimlik doğrulama.
-- **Rol Tabanlı Yetkilendirme (RBAC):** `ADMIN` ve `USER` rolleri ile gelişmiş moderasyon ve yönetim kontrolleri.
-
-### 📖 İlan ve Kategori Sistemi
-- **Onaylı İlan Girişi:** Kullanıcılar tarafından eklenen ilanlar **PENDING (Onay Bekliyor)** durumunda başlar ve admin panelinden onaylandıktan (`ACTIVE`) sonra listelenir.
-- **Zengin İlan Detayları:** Kitap adı, yazar, açıklama, kategori, alt kategori, ürün kondisyonu (Sıfır, Sıfır Gibi, Az Kullanılmış vb.) ve çoklu resim yükleme desteği.
-- **SEO-Friendly URL (Slug):** Arama motorları uyumlu otomatik Türkçe karakter destekli URL yapılandırması.
-
-### 💬 Gerçek Zamanlı Sohbet ve Soru-Cevap (Q&A)
-- **Direct Messaging (DM):** Alıcı ve satıcı arasında gerçek zamanlı (Socket.io), anlık yazıyor göstergeli ve okundu bildirimli sohbet odaları.
-- **Genel Soru-Cevap:** İlan sayfalarında herkesin görebileceği, satıcının yanıtlayabileceği genel soru-cevap alanı.
-- **Anlık Bildirimler:** İlan onay/red durumları, yeni mesajlar, sorular ve sipariş durum güncellemeleri için anlık bildirim sistemi.
-
-### 🛒 Satın Alma ve Kargo Takip Akışı
-- **Mock Ödeme ve Sipariş:** Güvenli ödeme simülasyonu ile kolay satın alım.
-- **Kargo Yönetimi:** Satıcılar için otomatik kargo barkod üretimi ve alıcılar için teslim onay sistemi.
-
-### 🛠️ Gelişmiş Admin Yönetim Paneli
-- **Dashboard İstatistikleri:** Toplam üye, aktif ilan, bekleyen moderasyon ve sipariş verilerinin görselleştirilmesi.
-- **Kategori & Navigasyon Yönetimi:** Dinamik menü kategorileri ve alt kategori tanımları.
-- **Tema & Slider Yönetimi:** Ana sayfadaki görsel slider'ın, gri maske (overlay) efektlerinin ve buton linklerinin dinamik yönetimi.
+</div>
 
 ---
 
-## 🛠️ Teknoloji Yığını
+## 🇹🇷 Türkçe
 
-| Katman | Teknoloji / Kütüphane | Kullanım Amacı |
-| :--- | :--- | :--- |
-| **Frontend** | **Next.js 16 (App Router)** | React Framework, SSR/CSR, App router yapısı |
-| | **React 19 & TypeScript** | Tip güvenliği ve dinamik arayüz yönetimi |
-| | **Tailwind CSS** | Premium, responsive ve modern arayüz tasarımı |
-| | **Lucide React** | Minimalist ve modern ikon paketi |
-| | **Socket.io Client** | Gerçek zamanlı WebSocket bağlantıları |
-| **Backend** | **Node.js & Express.js** | Hızlı, ölçeklenebilir RESTful API mimarisi |
-| | **Sequelize ORM** | MySQL veritabanı nesne ilişkisel modelleme (ORM) |
-| | **MySQL 8.x** | Güvenilir ve ilişkisel veri saklama |
-| | **Socket.io** | Sohbet, yazıyor... durumu ve bildirim yönetimi |
-| | **Multer** | Profil, ilan ve slider resimleri yükleme yönetimi |
-| | **Helmet & CORS** | Güvenlik başlıkları ve CORS güvenlik politikaları |
-| | **bcryptjs** | Güvenli tek yönlü şifre hash'leme |
+### Hakkında
+
+Kullanıcıların ikinci el kitaplarını güvenle listeleyip satabileceği, alıcıların ise aradıkları eserleri kolayca bulup mesajlaşma veya soru-cevap yoluyla satıcılarla iletişim kurabileceği **moderasyonlu ve gerçek zamanlı bir ilan platformudur**.
 
 ---
 
-## 📦 Kurulum ve Çalıştırma
+### Temel Özellikler
 
-### 1. Ön Gereksinimler
-- **Node.js** (v18 veya üzeri)
-- **MySQL** (v8.x veya üzeri)
+| Özellik | Açıklama |
+|---------|----------|
+| **Kimlik Doğrulama** | JWT + HttpOnly Cookie tabanlı güvenli Access/Refresh Token akışı |
+| **Rol Bazlı Yetkilendirme** | `ADMIN` ve `USER` rolleri ile moderasyon ve yönetim kontrolleri |
+| **Onaylı İlan Sistemi** | İlanlar `PENDING` olarak başlar, admin onayı sonrası `ACTIVE` olur |
+| **Zengin İlan Detayları** | Kitap adı, yazar, kategori, kondisyon, çoklu resim yükleme |
+| **SEO-Friendly URL** | Türkçe karakter destekli otomatik slug oluşturma |
+| **Gerçek Zamanlı Sohbet** | Socket.io ile anlık mesajlaşma, yazıyor göstergesi, okundu bildirimi |
+| **Soru-Cevap (Q&A)** | İlan sayfalarında herkese açık soru-cevap alanı |
+| **Anlık Bildirimler** | İlan onay/red, yeni mesaj, soru ve sipariş güncellemeleri |
+| **Satın Alma & Kargo** | Mock ödeme simülasyonu, otomatik kargo barkod üretimi, teslim onayı |
+| **Admin Paneli** | Dashboard istatistikleri, kategori yönetimi, slider & tema yönetimi |
 
-### 2. Veritabanı Hazırlığı
-MySQL konsolunuzda aşağıdaki veritabanını oluşturun:
+---
+
+### Teknoloji Yığını
+
+| Katman | Teknoloji | Kullanım Amacı |
+|--------|-----------|----------------|
+| **Frontend** | Next.js 16 (App Router) | SSR/CSR React Framework |
+| | React 19 + TypeScript | Tip güvenli dinamik arayüz |
+| | Tailwind CSS | Responsive, modern tasarım |
+| | Lucide React | Minimalist ikon paketi |
+| | Socket.io Client | Gerçek zamanlı WebSocket bağlantıları |
+| **Backend** | Node.js + Express.js | RESTful API sunucusu |
+| | Sequelize ORM | MySQL nesne ilişkisel modelleme |
+| | MySQL 8.x | İlişkisel veri saklama |
+| | Socket.io | Sohbet, yazıyor durumu, bildirimler |
+| | Multer | Resim yükleme yönetimi |
+| | Helmet + CORS | Güvenlik başlıkları ve CORS politikaları |
+| | bcryptjs | Güvenli şifre hash'leme |
+| **Auth** | JWT (Access + Refresh) | Durumsuz kimlik doğrulama |
+
+---
+
+### Kurulum
+
+**Ön Gereksinimler:** Node.js v18+, MySQL v8.x+
+
 ```sql
 CREATE DATABASE listing_platform CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
-### 3. Backend Kurulumu
 ```bash
+# Backend
 cd backend
-cp .env.example .env # DB_PASSWORD ve JWT_SECRET'larınızı tanımlayın
+cp .env.example .env    # DB_PASSWORD ve JWT_SECRET tanımlayın
 npm install
-npm run dev # http://localhost:5001 adresinde sunucu başlar
-```
+npm run dev             # → http://localhost:5001
 
-### 4. Frontend Kurulumu
-```bash
+# Frontend
 cd ../frontend
 echo "NEXT_PUBLIC_API_URL=http://localhost:5001/api" > .env.local
 npm install
-npm run dev # http://localhost:3000 adresinde arayüz başlar
+npm run dev             # → http://localhost:3000
 ```
 
 ---
 
-## 🔑 Öntanımlı Test Hesapları
+### Test Hesapları
 
-Sistemi doğrudan deneyimleyebilmeniz için önceden tanımlanmış test kullanıcıları:
+| Rol | E-posta | Şifre |
+|-----|---------|-------|
+| **Yönetici** | `admin@demo.com` | `Admin123!` |
+| **Satıcı** | `satici@demo.com` | `satici123` |
+| **Alıcı** | `alici@demo.com` | `alici123` |
 
-- **Yönetici (Admin) Girişi:**
-  - E-posta: `admin@demo.com`
-  - Şifre: `Admin123!`
-- **Satıcı (User) Girişi:**
-  - E-posta: `satici@demo.com`
-  - Şifre: `satici123`
-- **Alıcı (User) Girişi:**
-  - E-posta: `alici@demo.com`
-  - Şifre: `alici123`
+---
 
+<br>
 
+<a name="-english"></a>
 
+## 🇬🇧 English
 
-## Galeri
+### About
+
+A moderated, real-time marketplace where users can list, discover, and purchase second-hand books — featuring instant messaging, Q&A, order tracking, and a full admin panel.
+
+---
+
+### Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **Authentication** | JWT + HttpOnly Cookie based secure Access/Refresh Token flow |
+| **Role-Based Access** | `ADMIN` and `USER` roles with granular permission gates |
+| **Moderated Listings** | Listings start as `PENDING`, go live after admin approval (`ACTIVE`) |
+| **Rich Details** | Book title, author, category, condition, multi-image upload |
+| **SEO-Friendly Slugs** | Auto-generated, Turkish-character-aware URL slugs |
+| **Real-Time Chat** | Socket.io powered DM with typing indicators and read receipts |
+| **Public Q&A** | Open question-answer threads on listing pages |
+| **Instant Notifications** | Real-time alerts for approvals, messages, questions, order updates |
+| **Purchase & Shipping** | Mock payment, auto-generated shipping barcodes, delivery confirmation |
+| **Admin Panel** | Dashboard analytics, category management, slider & theme control |
+
+---
+
+### Tech Stack
+
+| Layer | Technology | Purpose |
+|-------|------------|---------|
+| **Frontend** | Next.js 16 (App Router) | SSR/CSR React framework |
+| | React 19 + TypeScript | Type-safe dynamic UI |
+| | Tailwind CSS | Responsive, modern styling |
+| | Lucide React | Minimalist icon library |
+| | Socket.io Client | Real-time WebSocket connections |
+| **Backend** | Node.js + Express.js | RESTful API server |
+| | Sequelize ORM | MySQL object-relational mapping |
+| | MySQL 8.x | Relational data storage |
+| | Socket.io | Chat, typing indicators, notifications |
+| | Multer | Image upload handling |
+| | Helmet + CORS | Security headers & cross-origin policies |
+| | bcryptjs | Secure password hashing |
+| **Auth** | JWT (Access + Refresh) | Stateless authentication |
+
+---
+
+### Installation
+
+**Prerequisites:** Node.js v18+, MySQL v8.x+
+
+```sql
+CREATE DATABASE listing_platform CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
+```bash
+# Backend
+cd backend
+cp .env.example .env    # Set DB_PASSWORD and JWT_SECRET
+npm install
+npm run dev             # → http://localhost:5001
+
+# Frontend
+cd ../frontend
+echo "NEXT_PUBLIC_API_URL=http://localhost:5001/api" > .env.local
+npm install
+npm run dev             # → http://localhost:3000
+```
+
+---
+
+### Demo Accounts
+
+| Role | Email | Password |
+|------|-------|----------|
+| **Admin** | `admin@demo.com` | `Admin123!` |
+| **Seller** | `satici@demo.com` | `satici123` |
+| **Buyer** | `alici@demo.com` | `alici123` |
+
+---
+
+## 📸 Gallery
 
 <img width="1673" height="747" alt="Ekran Resmi 2026-05-31 21 14 41" src="https://github.com/user-attachments/assets/25c48668-9d67-4d7d-83dc-37ae386c673d" />
 <br>
@@ -119,4 +202,9 @@ Sistemi doğrudan deneyimleyebilmeniz için önceden tanımlanmış test kullan�
 <br>
 <img width="1615" height="733" alt="Ekran Resmi 2026-05-31 21 15 17" src="https://github.com/user-attachments/assets/c7ed484e-61c0-4cba-bab9-c7ce5b88934d" />
 
-  
+---
+
+<div align="center">
+  <br>
+  <p>Built with ❤️ using Next.js, Express & Socket.io</p>
+</div>
